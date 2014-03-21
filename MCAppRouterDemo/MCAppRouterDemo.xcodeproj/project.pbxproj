@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		344CAC7F18DB4307002A788A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344CAC7E18DB4307002A788A /* Foundation.framework */; };
+		344CAC8118DB4307002A788A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344CAC8018DB4307002A788A /* CoreGraphics.framework */; };
+		344CAC8318DB4307002A788A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344CAC8218DB4307002A788A /* UIKit.framework */; };
+		344CAC8918DB4307002A788A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 344CAC8718DB4307002A788A /* InfoPlist.strings */; };
+		344CAC8B18DB4307002A788A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 344CAC8A18DB4307002A788A /* main.m */; };
+		344CAC8F18DB4307002A788A /* MCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 344CAC8E18DB4307002A788A /* MCAppDelegate.m */; };
+		344CAC9218DB4307002A788A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344CAC9018DB4307002A788A /* Main.storyboard */; };
+		344CAC9518DB4307002A788A /* MCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 344CAC9418DB4307002A788A /* MCViewController.m */; };
+		344CAC9718DB4307002A788A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 344CAC9618DB4307002A788A /* Images.xcassets */; };
+		344CAC9E18DB4308002A788A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344CAC9D18DB4308002A788A /* XCTest.framework */; };
+		344CAC9F18DB4308002A788A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344CAC7E18DB4307002A788A /* Foundation.framework */; };
+		344CACA018DB4308002A788A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 344CAC8218DB4307002A788A /* UIKit.framework */; };
+		344CACA818DB4308002A788A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 344CACA618DB4308002A788A /* InfoPlist.strings */; };
+		344CACAA18DB4308002A788A /* MCAppRouterDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 344CACA918DB4308002A788A /* MCAppRouterDemoTests.m */; };
+		34B25D3718DBEE73006FCDFB /* MCDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B25D3618DBEE73006FCDFB /* MCDemoViewController.m */; };
+		34B25D3C18DBF30E006FCDFB /* MCAppRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B25D3B18DBF30E006FCDFB /* MCAppRouter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		344CACA118DB4308002A788A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 344CAC7318DB4307002A788A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 344CAC7A18DB4307002A788A;
+			remoteInfo = MCAppRouterDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		344CAC7B18DB4307002A788A /* MCAppRouterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCAppRouterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		344CAC7E18DB4307002A788A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		344CAC8018DB4307002A788A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		344CAC8218DB4307002A788A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		344CAC8618DB4307002A788A /* MCAppRouterDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MCAppRouterDemo-Info.plist"; sourceTree = "<group>"; };
+		344CAC8818DB4307002A788A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		344CAC8A18DB4307002A788A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		344CAC8C18DB4307002A788A /* MCAppRouterDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MCAppRouterDemo-Prefix.pch"; sourceTree = "<group>"; };
+		344CAC8D18DB4307002A788A /* MCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCAppDelegate.h; sourceTree = "<group>"; };
+		344CAC8E18DB4307002A788A /* MCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCAppDelegate.m; sourceTree = "<group>"; };
+		344CAC9118DB4307002A788A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		344CAC9318DB4307002A788A /* MCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCViewController.h; sourceTree = "<group>"; };
+		344CAC9418DB4307002A788A /* MCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCViewController.m; sourceTree = "<group>"; };
+		344CAC9618DB4307002A788A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		344CAC9C18DB4308002A788A /* MCAppRouterDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MCAppRouterDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		344CAC9D18DB4308002A788A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		344CACA518DB4308002A788A /* MCAppRouterDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MCAppRouterDemoTests-Info.plist"; sourceTree = "<group>"; };
+		344CACA718DB4308002A788A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		344CACA918DB4308002A788A /* MCAppRouterDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCAppRouterDemoTests.m; sourceTree = "<group>"; };
+		34B25D3518DBEE73006FCDFB /* MCDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCDemoViewController.h; sourceTree = "<group>"; };
+		34B25D3618DBEE73006FCDFB /* MCDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCDemoViewController.m; sourceTree = "<group>"; };
+		34B25D3A18DBF30E006FCDFB /* MCAppRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCAppRouter.h; path = ../../MCAppRouter/MCAppRouter.h; sourceTree = "<group>"; };
+		34B25D3B18DBF30E006FCDFB /* MCAppRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCAppRouter.m; path = ../../MCAppRouter/MCAppRouter.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		344CAC7818DB4307002A788A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344CAC8118DB4307002A788A /* CoreGraphics.framework in Frameworks */,
+				344CAC8318DB4307002A788A /* UIKit.framework in Frameworks */,
+				344CAC7F18DB4307002A788A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		344CAC9918DB4308002A788A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344CAC9E18DB4308002A788A /* XCTest.framework in Frameworks */,
+				344CACA018DB4308002A788A /* UIKit.framework in Frameworks */,
+				344CAC9F18DB4308002A788A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		344CAC7218DB4307002A788A = {
+			isa = PBXGroup;
+			children = (
+				344CAC8418DB4307002A788A /* MCAppRouterDemo */,
+				344CACA318DB4308002A788A /* MCAppRouterDemoTests */,
+				344CAC7D18DB4307002A788A /* Frameworks */,
+				344CAC7C18DB4307002A788A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		344CAC7C18DB4307002A788A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				344CAC7B18DB4307002A788A /* MCAppRouterDemo.app */,
+				344CAC9C18DB4308002A788A /* MCAppRouterDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		344CAC7D18DB4307002A788A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				344CAC7E18DB4307002A788A /* Foundation.framework */,
+				344CAC8018DB4307002A788A /* CoreGraphics.framework */,
+				344CAC8218DB4307002A788A /* UIKit.framework */,
+				344CAC9D18DB4308002A788A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		344CAC8418DB4307002A788A /* MCAppRouterDemo */ = {
+			isa = PBXGroup;
+			children = (
+				34B25D3D18DBF312006FCDFB /* App Router */,
+				34B25D3818DBF2F2006FCDFB /* App Delegate */,
+				34B25D3918DBF2FD006FCDFB /* View Controllers */,
+				344CAC9618DB4307002A788A /* Images.xcassets */,
+				344CAC8518DB4307002A788A /* Supporting Files */,
+			);
+			path = MCAppRouterDemo;
+			sourceTree = "<group>";
+		};
+		344CAC8518DB4307002A788A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				344CAC8618DB4307002A788A /* MCAppRouterDemo-Info.plist */,
+				344CAC8718DB4307002A788A /* InfoPlist.strings */,
+				344CAC8A18DB4307002A788A /* main.m */,
+				344CAC8C18DB4307002A788A /* MCAppRouterDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		344CACA318DB4308002A788A /* MCAppRouterDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				344CACA918DB4308002A788A /* MCAppRouterDemoTests.m */,
+				344CACA418DB4308002A788A /* Supporting Files */,
+			);
+			path = MCAppRouterDemoTests;
+			sourceTree = "<group>";
+		};
+		344CACA418DB4308002A788A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				344CACA518DB4308002A788A /* MCAppRouterDemoTests-Info.plist */,
+				344CACA618DB4308002A788A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		34B25D3818DBF2F2006FCDFB /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				344CAC8D18DB4307002A788A /* MCAppDelegate.h */,
+				344CAC8E18DB4307002A788A /* MCAppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		34B25D3918DBF2FD006FCDFB /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				344CAC9018DB4307002A788A /* Main.storyboard */,
+				344CAC9318DB4307002A788A /* MCViewController.h */,
+				344CAC9418DB4307002A788A /* MCViewController.m */,
+				34B25D3518DBEE73006FCDFB /* MCDemoViewController.h */,
+				34B25D3618DBEE73006FCDFB /* MCDemoViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		34B25D3D18DBF312006FCDFB /* App Router */ = {
+			isa = PBXGroup;
+			children = (
+				34B25D3A18DBF30E006FCDFB /* MCAppRouter.h */,
+				34B25D3B18DBF30E006FCDFB /* MCAppRouter.m */,
+			);
+			name = "App Router";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		344CAC7A18DB4307002A788A /* MCAppRouterDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 344CACAD18DB4308002A788A /* Build configuration list for PBXNativeTarget "MCAppRouterDemo" */;
+			buildPhases = (
+				344CAC7718DB4307002A788A /* Sources */,
+				344CAC7818DB4307002A788A /* Frameworks */,
+				344CAC7918DB4307002A788A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MCAppRouterDemo;
+			productName = MCAppRouterDemo;
+			productReference = 344CAC7B18DB4307002A788A /* MCAppRouterDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		344CAC9B18DB4308002A788A /* MCAppRouterDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 344CACB018DB4308002A788A /* Build configuration list for PBXNativeTarget "MCAppRouterDemoTests" */;
+			buildPhases = (
+				344CAC9818DB4308002A788A /* Sources */,
+				344CAC9918DB4308002A788A /* Frameworks */,
+				344CAC9A18DB4308002A788A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				344CACA218DB4308002A788A /* PBXTargetDependency */,
+			);
+			name = MCAppRouterDemoTests;
+			productName = MCAppRouterDemoTests;
+			productReference = 344CAC9C18DB4308002A788A /* MCAppRouterDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		344CAC7318DB4307002A788A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Matthew Cheok";
+				TargetAttributes = {
+					344CAC9B18DB4308002A788A = {
+						TestTargetID = 344CAC7A18DB4307002A788A;
+					};
+				};
+			};
+			buildConfigurationList = 344CAC7618DB4307002A788A /* Build configuration list for PBXProject "MCAppRouterDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 344CAC7218DB4307002A788A;
+			productRefGroup = 344CAC7C18DB4307002A788A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				344CAC7A18DB4307002A788A /* MCAppRouterDemo */,
+				344CAC9B18DB4308002A788A /* MCAppRouterDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		344CAC7918DB4307002A788A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344CAC9718DB4307002A788A /* Images.xcassets in Resources */,
+				344CAC8918DB4307002A788A /* InfoPlist.strings in Resources */,
+				344CAC9218DB4307002A788A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		344CAC9A18DB4308002A788A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344CACA818DB4308002A788A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		344CAC7718DB4307002A788A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344CAC8F18DB4307002A788A /* MCAppDelegate.m in Sources */,
+				34B25D3C18DBF30E006FCDFB /* MCAppRouter.m in Sources */,
+				344CAC9518DB4307002A788A /* MCViewController.m in Sources */,
+				34B25D3718DBEE73006FCDFB /* MCDemoViewController.m in Sources */,
+				344CAC8B18DB4307002A788A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		344CAC9818DB4308002A788A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344CACAA18DB4308002A788A /* MCAppRouterDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		344CACA218DB4308002A788A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 344CAC7A18DB4307002A788A /* MCAppRouterDemo */;
+			targetProxy = 344CACA118DB4308002A788A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		344CAC8718DB4307002A788A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				344CAC8818DB4307002A788A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		344CAC9018DB4307002A788A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				344CAC9118DB4307002A788A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		344CACA618DB4308002A788A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				344CACA718DB4308002A788A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		344CACAB18DB4308002A788A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		344CACAC18DB4308002A788A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		344CACAE18DB4308002A788A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MCAppRouterDemo/MCAppRouterDemo-Prefix.pch";
+				INFOPLIST_FILE = "MCAppRouterDemo/MCAppRouterDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		344CACAF18DB4308002A788A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MCAppRouterDemo/MCAppRouterDemo-Prefix.pch";
+				INFOPLIST_FILE = "MCAppRouterDemo/MCAppRouterDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		344CACB118DB4308002A788A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MCAppRouterDemo.app/MCAppRouterDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MCAppRouterDemo/MCAppRouterDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MCAppRouterDemoTests/MCAppRouterDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		344CACB218DB4308002A788A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MCAppRouterDemo.app/MCAppRouterDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MCAppRouterDemo/MCAppRouterDemo-Prefix.pch";
+				INFOPLIST_FILE = "MCAppRouterDemoTests/MCAppRouterDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		344CAC7618DB4307002A788A /* Build configuration list for PBXProject "MCAppRouterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				344CACAB18DB4308002A788A /* Debug */,
+				344CACAC18DB4308002A788A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		344CACAD18DB4308002A788A /* Build configuration list for PBXNativeTarget "MCAppRouterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				344CACAE18DB4308002A788A /* Debug */,
+				344CACAF18DB4308002A788A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		344CACB018DB4308002A788A /* Build configuration list for PBXNativeTarget "MCAppRouterDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				344CACB118DB4308002A788A /* Debug */,
+				344CACB218DB4308002A788A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 344CAC7318DB4307002A788A /* Project object */;
+}
