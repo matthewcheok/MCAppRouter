@@ -26,13 +26,13 @@ static NSString *const kMCAppRouterHexColorMatchingRegex = @"^#(?:[0-9a-fA-F]{3}
 @implementation UIColor (MCAppRouter)
 
 + (UIColor *)colorFromWebColorString:(NSString *)colorString {
-    
+
 	NSUInteger length = [colorString length];
 	if (length > 0) {
 		// remove prefixed #
 		colorString = [colorString stringByTrimmingCharactersInSet: [NSCharacterSet characterSetWithCharactersInString:@"#"]];
 		length = [colorString length];
-        
+
 		// calculate substring ranges of each color
 		// FFF or FFFFFF
 		NSRange redRange, blueRange, greenRange;
@@ -47,24 +47,24 @@ static NSString *const kMCAppRouterHexColorMatchingRegex = @"^#(?:[0-9a-fA-F]{3}
 		} else {
 			return nil;
 		}
-        
+
 		// extract colors
 		unsigned int redComponent, greenComponent, blueComponent;
 		BOOL valid = YES;
 		NSScanner *scanner = [NSScanner scannerWithString:[colorString substringWithRange:redRange]];
 		valid = [scanner scanHexInt:&redComponent];
-        
+
 		scanner = [NSScanner scannerWithString:[colorString substringWithRange:greenRange]];
 		valid = ([scanner scanHexInt:&greenComponent] && valid);
-        
+
 		scanner = [NSScanner scannerWithString:[colorString substringWithRange:blueRange]];
 		valid = ([scanner scanHexInt:&blueComponent] && valid);
-        
+
 		if (valid) {
 			return [UIColor colorWithRed:redComponent/255.0 green:greenComponent/255.0 blue:blueComponent/255.0 alpha:1.0f];
 		}
 	}
-    
+
 	return nil;
 }
 
@@ -178,7 +178,7 @@ static NSString *const kMCAppRouterHexColorMatchingRegex = @"^#(?:[0-9a-fA-F]{3}
 	 }];
 }
 
-- (UIViewController *)viewControllerMatchingRoute:(NSString *)route {
+- (id)viewControllerMatchingRoute:(NSString *)route {
 	route = [self normalizedStringFromString:route];
     NSMutableArray *values = [NSMutableArray array];
 
@@ -192,7 +192,7 @@ static NSString *const kMCAppRouterHexColorMatchingRegex = @"^#(?:[0-9a-fA-F]{3}
             }
             key = expression;
         }
-        
+
         if (key) {
             break;
         }
@@ -209,13 +209,13 @@ static NSString *const kMCAppRouterHexColorMatchingRegex = @"^#(?:[0-9a-fA-F]{3}
         NSString *identifer = dictionary[kMCAppRouterStoryboardIdentiferKey];
         controller = [[UIStoryboard storyboardWithName:storyboardName bundle:nil] instantiateViewControllerWithIdentifier:identifer];
     }
-    
+
     NSArray *params = dictionary[kMCAppRouterParametersKey];
     if ([params count] == [values count]) {
         for (int i=0; i<[params count]; i++) {
             NSString *keyPath = params[i];
             NSString *value = values[i];
-            
+
             // check if hex color
             if ([self.colorRegex numberOfMatchesInString:value options:NSMatchingAnchored range:NSMakeRange(0, [value length])] > 0) {
                 UIColor *color = [UIColor colorFromWebColorString:value];

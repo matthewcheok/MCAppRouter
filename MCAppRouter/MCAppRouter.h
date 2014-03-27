@@ -23,6 +23,6 @@
 - (void)mapRoute:(NSString *)route toViewControllerClass:(Class)class;
 - (void)mapRoute:(NSString *)route toViewControllerInStoryboardWithName:(NSString *)name withIdentifer:(NSString *)identifer;
 
-- (UIViewController *)viewControllerMatchingRoute:(NSString *)route;
+- (id)viewControllerMatchingRoute:(NSString *)route;
 
 @end
